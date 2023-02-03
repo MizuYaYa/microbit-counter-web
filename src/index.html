@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>serial</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>どっちの<span>アクセサリー</span>が好き？</h1>
+        <div class="main">
+            <div class="title">
+                <p>布のビーズ</p>
+                <p class="sub_txt">あなたの衣類で投票しよう！</p>
+                <p>つまみ細工</p>
+            </div>
+            <div class="score">
+                <p id="left-score" class="score_point"><span id="lower_left_num">0</span><span id="upper_left_num">1</span></p>
+                <p>VS</p>
+                <p id="right-score" class="score_point"><span id="lower_right_num">0</span><span id="upper_right_num">1</span></p>
+            </div>
+            <div id="image" class="image">
+                <img src="./image/left_image.jpeg" alt="">
+                <button class="hidden_btn" onclick="hidden_btn()"></button>
+                <img src="./image/right_image.jpeg" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="button" id="left_anime" onclick="wait('green_counter')">left</button>
+            <button type="button" id="right_anime" onclick="wait('yellow_counter')">right</button>
+            <button type="button" id="serialPort_connect">connect</button>
+            <button type="button" onclick="resetLocal()">reset</button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

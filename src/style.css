@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans:wght@300&family=Noto+Serif+JP&family=Rampart+One&display=swap');
+
+body p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.score {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.score p {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.title {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-weight: bold;
+}
+.title p {
+    margin: 0;
+}
+
+h1 {
+    color: #7b8d42;
+    text-align: center;
+    font-size: 100px;
+    margin: 0 0 20px 0;
+    letter-spacing: 10px;
+    text-shadow: 1px 3px 2px gray;
+}
+
+h1 span {
+    color: #f08300;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 330px;
+    margin-right: 330px;
+}
+
+.image img {
+    width: 300px;
+    height: 230px;
+    box-shadow: 5px 10px 10px gray;
+    border-radius: 20px;
+    border: solid 3px #f08300;
+}
+
+.sub_txt {
+    font-size: 35px;
+    line-height: 75px;
+    text-decoration: underline double black;
+}
+
+.body_transition {
+    transition: all 2 ease;
+    background-color: black;
+    color: black;
+}
+
+.body_transition h1 {
+    display: none;
+}
+
+.score_point_transition {
+    transition: all 3 ease;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    text-shadow: 20px 20px 3px white;
+}
+
+.image_transition {
+    display: none;
+}
+
+.buttons {
+    margin-top: 1000px;
+}
+
+.hidden_btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.score_point {
+	position: relative;
+	overflow: hidden;
+	padding: 0px 180px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-shadow: 4px 4px 3px black;
+}
+
+
+.score p span{
+	position: absolute;
+	left: 50%;
+	top:0;
+	transition: all .5s ease-out;
+	transform: translate(-50%, 0);
+	display: block;
+	opacity:1;
+	white-space: nowrap;
+}
+
+.score p span:nth-child(2){
+	opacity:0;
+    transform: translate(-50%,-100%);
+}
+
+.score .text_slide span:nth-child(1){
+	opacity:0;
+    transform: translate(-50%,100%);
+}
+
+.score .text_slide span:nth-child(2){
+	opacity:1;
+	transform: translate(-50%, 0);
+}
